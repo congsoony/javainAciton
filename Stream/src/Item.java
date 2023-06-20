@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public interface Item {
     List<Dish> menu = Arrays.asList(
@@ -13,4 +14,11 @@ public interface Item {
             new Dish("prawns", false, 300, Dish.Type.FISH),
             new Dish("salmon", false, 450, Dish.Type.FISH)
     );
+    List<Dish> specialMenu = Arrays.asList(new Dish("seasonal fruit",true,120,Dish.Type.OTHER)
+    ,new Dish("prawns",false,300,Dish.Type.FISH)
+            ,new Dish("rice",true,350,Dish.Type.OTHER),
+            new Dish("chicken",false,400,Dish.Type.MEAT)
+            ,new Dish("french fries",true,100,Dish.Type.OTHER));
+
+
 }
