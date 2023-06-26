@@ -33,6 +33,23 @@ public class Main {
         //mapping: chicken
         System.out.println(names);
 
+        int totalCalories = menu.stream().collect(Collectors.summingInt(Dish::getCalories));
+
+        System.out.println("totalCalories : "+ totalCalories);
+
+        IntSummaryStatistics menuStatistics =menu.stream().collect(Collectors.summarizingInt(Dish::getCalories));
+
+        System.out.println(menuStatistics);
+
+        String shortMenu = menu.stream().map(Dish::getName).collect(Collectors.joining(" "));
+        System.out.println(shortMenu);
+
+        int total = menu.stream().collect(Collectors.reducing(0,Dish::getCalories,Integer::sum));
+
+
+        Map<Dish.Type,List<Dish>> dishesByType = menu.stream().collect(Collectors.groupingBy(Dish::getType));
+
+        System.out.println(dishesByType);
 
 
     }

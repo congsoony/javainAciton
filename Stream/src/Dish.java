@@ -13,9 +13,7 @@ public class Dish {
 
     @Override
     public String toString() {
-        return "Dish{" +
-                "name='" + name + '\'' +
-                '}';
+        return name;
     }
 
     public String getName() {
