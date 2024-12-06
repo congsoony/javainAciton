@@ -1,7 +1,8 @@
+import part4.Dish;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class StreamMap {
     public static List<Dish> menu = Item.menu;

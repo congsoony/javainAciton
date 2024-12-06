@@ -1,3 +1,5 @@
+import part4.Dish;
+
 import java.util.*;
 import java.util.stream.Collectors;
 

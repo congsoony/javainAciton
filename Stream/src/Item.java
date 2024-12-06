@@ -1,6 +1,7 @@
+import part4.Dish;
+
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public interface Item {
     List<Dish> menu = Arrays.asList(

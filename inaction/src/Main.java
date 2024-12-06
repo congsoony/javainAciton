@@ -8,6 +8,7 @@ public class Main {
 
         List<Apple> heavyApples = filterApples(inventory,new AppleHeavyWeightPredicate());
         List<Apple>greenApples = filterApples(inventory,new AppleGREE)
+
     }
 
 
