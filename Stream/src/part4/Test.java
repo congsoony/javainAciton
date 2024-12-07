@@ -13,10 +13,18 @@ public class Test {
                 highCaloricDishes.add(dish.getName());
             }
         }
-        List<String> list = menu.stream().filter(dish->dish.getCalories()>300)
-                .map(Dish::getName)
+        List<String> list = menu.stream()
+                .filter(dish->{
+                    System.out.println("filter : "+dish.getName() + " "+dish.getCalories());
+                    return dish.getCalories()>500;
+                })
+                .map(d->{
+                    System.out.println("mapping "+ d.getName()+ " "+d.getName());
+                    return d.getName();
+                })
+                .limit(3)
                 .collect(Collectors.toList());
-        System.out.println(highCaloricDishes.equals(list));
+        System.out.println(list);
 
     }
 }

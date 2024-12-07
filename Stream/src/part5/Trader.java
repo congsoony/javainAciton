@@ -1,3 +1,5 @@
+package part5;
+
 public class Trader {
     private final String name;
     private final String city;

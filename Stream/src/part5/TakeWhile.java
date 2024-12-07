@@ -46,5 +46,7 @@ public class TakeWhile {
                 })
                 .collect(Collectors.toList());
         System.out.println(result1);
+
+
     }
 }
