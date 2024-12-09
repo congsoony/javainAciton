@@ -1,4 +1,4 @@
-package modernjavainaction.chap05;
+package org.example.part8;
 
 import java.util.Objects;
 

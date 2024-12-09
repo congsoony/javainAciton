@@ -1,4 +1,4 @@
-package modernjavainaction.chap05;
+package org.example.part8;
 
 import java.util.Objects;
 
@@ -55,5 +55,4 @@ public class Transaction {
   public String toString() {
     return String.format("{%s, year: %d, value: %d}", trader, year, value);
   }
-
 }
